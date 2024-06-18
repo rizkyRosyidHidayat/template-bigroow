@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Template 001 Bigroow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/template-001/tailwind.config.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="bg-[#f0f0f0] text-text-body">
+    <header></header>
+    <section class="mt-2 min-h-[500px]">
+      <div class="container">
+        <div class="pl-4 md:pl-8 pr-2 md:pr-4 py-2 md:py-4 border border-gray-400 flex items-center">
+          <input type="text" id="search" placeholder="Search" class="appearance-none bg-transparent md:text-xl focus:bg-transparent outline-none border-none w-full">
+          <button type="button" id="search-btn" class="shrink-0 cursor-pointer">
+            <i class="icon-search text-gray-800 md:text-xl"></i>
+          </button>
+        </div>
+        <div id="categories" class="flex items-center gap-2 md:gap-3 mb-4 md:mb-0 mt-5 md:mt-8">
+          <h2 id="category-title" class="uppercase text-2xl md:text-[40px] shrink-0 text-gray-400 max-w-full leading-none mr-auto"></h2>
+          <button type="button" id="category-btn-left" class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 disabled:bg-gray-400">
+            <i class="icon-chevron-left text-white md:text-xl"></i>
+          </button>
+          <button type="button" id="category-btn-right" class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 rotate-180 disabled:bg-gray-400">
+            <i class="icon-chevron-left text-white md:text-xl"></i>
+          </button>
+        </div>
+        <div id="not-found" class="mt-12 hidden">
+          <h1 class="uppercase font-black text-[24px] md:text-[42px] leading-none">
+            sorry, product not found :(
+          </h1>
+        </div>
+        <ul id="product-list" class="*:py-6 md:*:py-12 *:border-b *:border-gray-400"></ul>
+        <div id="loader"></div>
+      </div>
+    </section>
+
+    <footer class="my-8 md:my-12">
+      <p class="text-center text-[10px] md:text-xs">
+        Copyright @2024. Alright Reserved
+      </p>
+    </footer>
+
+    <script src="../js/template-001/search.js" type="module"></script>
+    <script src="../js/template-001/function/categoryBtn.js" type="module"></script>
+    <script src="../js/template-001/function/createHeader.js" type="module"></script>
+    <script src="../js/template-001/function/createLoader.js" type="module"></script>
+  </body>
+</html>
