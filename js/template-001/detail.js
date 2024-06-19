@@ -12,7 +12,7 @@ const state = {
   dataProduct: [],
 };
 
-const baseUrl = window.location.origin + '/js/template-001';
+const baseUrl = 'https://rizkyrosyidhidayat.github.io/template-bigroow/js/template-001';
 await fetch(baseUrl + '/data.json')
   .then((response) => response.json())
   .then((json) => (state.dataProduct = json));
