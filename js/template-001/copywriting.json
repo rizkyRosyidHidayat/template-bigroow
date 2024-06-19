@@ -4,14 +4,8 @@
 		"value": "LOGGOS"
 	},
 	"title": "lets find your food",
-	"heroBanner": {
-		"small": "../assets/img/cofee-machine-small.jpg",
-		"large": "../assets/img/cofee-machine.jpg"
-	},
+	"heroBanner": "../assets/img/cofee-machine.jpg",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat tempor vulputate. Ut dictum a sapien in blandit. Aenean varius diam sed tortor ullamcorper maximus.",
 	"categoryText": "choose the category",
-	"banner": {
-		"small": "../assets/img/cofee-shop-small.jpg",
-		"large": "../assets/img/cofee-shop.jpg"
-	}
+	"banner": "../assets/img/cofee-shop.jpg"
 }

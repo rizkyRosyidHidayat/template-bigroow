@@ -2,7 +2,7 @@
 	{
 		"name": "Seared Scallops with Lemon Risotto and Asparagus",
 		"description": "Plump, diver-caught scallops are pan-seared to a golden brown and served atop a creamy lemon risotto bursting with fresh parmesan cheese. Tender asparagus tips add a delightful pop of green and a touch of earthiness.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 67000,
 		"category": "main course",
 		"extra": [
@@ -29,7 +29,7 @@
 	{
 		"name": "Herb-Marinated Flank Steak with Chimichurri Sauce",
 		"description": "A skirt steak's bolder cousin, flank steak is marinated in a vibrant blend of herbs like rosemary, thyme, and oregano, then grilled to juicy perfection.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 56000,
 		"category": "main course",
 		"extra": [
@@ -68,7 +68,7 @@
 	{
 		"name": "Thai Green Curry with Vegetables and Tofu",
 		"description": "This fragrant curry features a symphony of flavors U+002d the sweetness of coconut milk, the earthiness of green chilies, and the warmth of ginger. A medley of colorful vegetables like broccoli, bell peppers, and eggplant simmer in this flavorful broth alongside pan-fried tofu puffs.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 42000,
 		"category": "main course",
 		"extra": [
@@ -99,7 +99,7 @@
 	{
 		"name": "Pan-Seared Duck Breast with Cherry Port Wine Sauce",
 		"description": "Duck breast, known for its rich flavor and crispy skin, is pan-seared to achieve the perfect balance of textures. A luxurious cherry port wine sauce, bursting with sweet and tart flavors, complements the duck perfectly.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 72000,
 		"category": "main course",
 		"extra": [
@@ -122,7 +122,7 @@
 	{
 		"name": "Seared Ahi Tuna Steaks with Wasabi Mayo and Sesame Seeds",
 		"description": "Sushi-grade ahi tuna steaks are quickly seared to maintain their rare, tender center. A dollop of creamy wasabi mayo adds a touch of heat, while a sprinkle of sesame seeds provides a nutty crunch.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 90000,
 		"category": "main course",
 		"extra": [
@@ -145,7 +145,7 @@
 	{
 		"name": "Gourmet Grilled Cheese Dippers with Trio of Spreads",
 		"description": "Elevate your classic grilled cheese with artisan bread varieties like sourdough or multigrain. Layers of melted Gruyere and Havarti cheeses create a rich and creamy filling. Cut the grilled cheese into bite-sized pieces perfect for dipping.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 22000,
 		"category": "appetizer",
 		"extra": [
@@ -180,7 +180,7 @@
 	{
 		"name": "Miniature Phyllo Cups with Savory Fillings",
 		"description": "Flaky phyllo dough is transformed into delicate miniature cups, filled with a variety of delectable savory ingredients. Choose from fillings like creamy spinach and ricotta, spicy chorizo and caramelized onions, or a classic Greek combination of crumbled feta cheese and sun-dried tomatoes.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 27000,
 		"category": "appetizer",
 		"extra": [
@@ -211,7 +211,7 @@
 	{
 		"name": "Decadent Charcuterie Board with Artisanal Meats",
 		"description": "A charcuterie board is a feast for the eyes and the palate. Arrange a selection of cured meats like prosciutto and salami alongside an assortment of artisan cheeses like brie, gouda, and cheddar",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 18000,
 		"category": "appetizer",
 		"extra": [
@@ -254,7 +254,7 @@
 	{
 		"name": "Spiced Shrimp Cocktail with Cocktail Sauce and Avocado Crema",
 		"description": "Plump, succulent shrimp are poached in a flavorful court bouillon infused with lemon, herbs, and spices. Once chilled, the shrimp are served with a classic cocktail sauce and a refreshing avocado crema for a delightful dip.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 14500,
 		"category": "appetizer",
 		"extra": [
@@ -285,7 +285,7 @@
 	{
 		"name": "Global Skewers with Dipping Sauces",
 		"description": "Create a fun and interactive appetizer experience with a selection of global-inspired skewers. Choose from options like chicken satay with peanut sauce, grilled lamb skewers with a yogurt mint marinade, or vegetable skewers with a chimichurri dipping sauce.",
-		"image": "",
+		"image": "../../assets/img/salmon-grill-preview.png",
 		"price": 19500,
 		"category": "appetizer",
 		"extra": [

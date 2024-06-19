@@ -1,4 +1,3 @@
-import data from './data.json' with { type: 'json' };
 import createProductList from './function/createProductList.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -9,10 +8,15 @@ const state = {
   startData: 0,
   endData: 3,
   showData: 3,
-  dataProduct: data,
+  dataProduct: [],
   isLoading: false,
   searchValue: ''
 };
+
+const baseUrl = window.location.origin + '/js/template-001';
+await fetch(baseUrl + '/data.json')
+  .then((response) => response.json())
+  .then((json) => (state.dataProduct = json));
 
 function handleSearchCategory(data) {
   return data.filter(product => product.category.toLocaleLowerCase() === category.toLocaleLowerCase());
@@ -28,9 +32,9 @@ function handleSearchText(data) {
   );
 }
 
-if (category && !search) state.dataProduct = handleSearchCategory(data);
-if (search && !category) state.dataProduct = handleSearchText(data);
-if (search && category) state.dataProduct = handleSearchCategory(handleSearchText(data));
+if (category && !search) state.dataProduct = handleSearchCategory(state.dataProduct);
+if (search && !category) state.dataProduct = handleSearchText(state.dataProduct);
+if (search && category) state.dataProduct = handleSearchCategory(handleSearchText(state.dataProduct));
 
 const searchBar = document.querySelector('#search');
 const searchBtn = document.querySelector('#search-btn');
@@ -73,7 +77,7 @@ const observer = new IntersectionObserver(
       state.isLoading = true;
       state.startData = state.startData + state.showData;
       state.endData = state.endData + state.showData;
-      const isLoadMore = state.startData <= data.length;
+      const isLoadMore = state.startData <= state.dataProduct.length;
       if (isLoadMore) loader.classList.remove('hidden');
       setTimeout(() => {
         if (isLoadMore) {
@@ -88,7 +92,7 @@ const observer = new IntersectionObserver(
   {
     root: null,
     threshold: 1.0,
-    rootMargin: "10% 0px 10% 0px",
+    rootMargin: "100px 0px 100px 0px",
   }
 );
 

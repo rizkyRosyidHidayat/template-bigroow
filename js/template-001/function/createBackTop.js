@@ -1,5 +1,6 @@
 import createElement from '../../createElement.js';
 gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 const backTopBtn = createElement(
   'button',

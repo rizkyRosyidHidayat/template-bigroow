@@ -1,29 +1,52 @@
-import data from './data.json' with { type: 'json' };
 import createProductList from './function/createProductList.js';
+import image from '../createImagePreload.js';
 
 const params = new URLSearchParams(window.location.search);
 const name = params.get('name');
 
 if (!name) window.location.href = '/';
 
-const detail = data.find((product) => product.name === name);
+const state = {
+  price: 0,
+  selectedExtra: [],
+  dataProduct: [],
+};
+
+const baseUrl = window.location.origin + '/js/template-001';
+await fetch(baseUrl + '/data.json')
+  .then((response) => response.json())
+  .then((json) => (state.dataProduct = json));
+
+const detail = state.dataProduct.find((product) => product.name === name);
 
 if (!detail) window.location.href = '/';
-
-const state = {
-  price: detail.price,
-  selectedExtra: [],
-};
+else state.price = detail.price;
 
 const setTextContent = (id, text) => {
   const el = document.querySelector(`#${id}`);
   el.textContent = text;
 };
-const getTotalExtra = () => state.selectedExtra.reduce((a, b) => a + b.value, 0);
+const getTotalExtra = () =>
+  state.selectedExtra.reduce((a, b) => a + b.value, 0);
 
 setTextContent('name', detail.name);
 setTextContent('description', detail.description);
 setTextContent('price', 'Rp ' + state.price.toLocaleString('ID-id'));
+
+image.createImgPreload(
+  'banner',
+  'block md:hidden w-full h-[273px] mt-5',
+  'object-center object-cover',
+  detail.image
+);
+image.createImgPreload(
+  'banner-desktop',
+  'hidden md:block w-1/2 h-[425px] sticky top-6',
+  'object-center object-cover',
+  detail.image
+);
+
+image.loadImage();
 
 function createExtraList(listData) {
   const extraEl = document.querySelector('#extra');
@@ -78,7 +101,7 @@ function createVariantList(listData) {
     inputEl.id = variant.name;
     inputEl.value = variant.price;
     inputEl.className = 'hidden';
-		inputEl.checked = variant.name === 'default' ? true : false;
+    inputEl.checked = variant.name === 'default' ? true : false;
 
     const textEl = document.createElement('span');
     textEl.textContent = variant.name;
@@ -110,6 +133,9 @@ createVariantList([
   ...detail.variant,
 ]);
 
-const listDataProduct = data.filter(product => product.category === detail.category && product.name !== detail.name);
+const listDataProduct = state.dataProduct.filter(
+  (product) =>
+    product.category === detail.category && product.name !== detail.name
+);
 const productListEl = document.querySelector('#product-list');
-createProductList(listDataProduct, productListEl);
+createProductList(listDataProduct.slice(0, 4), productListEl);

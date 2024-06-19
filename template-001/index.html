@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Template 001 Bigroow</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/template-001/tailwind.config.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="bg-[#f0f0f0] text-text-body">
     <header></header>
@@ -14,19 +14,29 @@
       <div class="container">
         <div class="md:flex md:h-[425px] items-center">
           <div class="w-full md:w-1/2 relative z-10">
-            <h1 id="title" class="uppercase font-black text-[40px] md:text-[72px] leading-none"></h1>
-            <p id="description" class="text-xs md:text-sm max-w-full w-[363px] mt-6 mb-8"></p>
+            <h1
+              id="title"
+              class="uppercase font-black text-[40px] md:text-[72px] leading-none"></h1>
+            <p
+              id="description"
+              class="text-xs md:text-sm max-w-full w-[363px] mt-6 mb-8"></p>
             <div id="hero-banner-mobile"></div>
             <div class="flex justify-between items-center mt-5 md:mt-0">
-              <h2 id="category-text" class="uppercase text-2xl md:text-[40px] text-gray-400 max-w-full w-[210px] md:w-[424px] leading-none"></h2>
-              <button type="button" class="block md:hidden bg-primary h-[50px] w-[50px] rounded-full -rotate-45 shrink-0">
+              <h2
+                id="category-text"
+                class="uppercase text-2xl md:text-[40px] text-gray-400 max-w-full w-[210px] md:w-[424px] leading-none"></h2>
+              <button
+                type="button"
+                class="block md:hidden bg-primary h-[50px] w-[50px] rounded-full -rotate-45 shrink-0">
                 <i class="icon-arrow-left text-white text-2xl"></i>
               </button>
             </div>
           </div>
           <div class="hidden md:block w-1/2 relative">
             <div id="hero-banner-desktop"></div>
-            <button type="button" class="bg-primary h-[77px] w-[77px] rounded-full -rotate-45 absolute -left-[34px] bottom-8">
+            <button
+              type="button"
+              class="bg-primary h-[77px] w-[77px] rounded-full -rotate-45 absolute -left-[34px] bottom-8">
               <i class="icon-arrow-left text-white text-4xl"></i>
             </button>
           </div>
@@ -46,16 +56,26 @@
     <section class="mt-9">
       <div class="container">
         <div class="flex items-center gap-2 md:gap-3 mb-4 md:mb-0">
-          <h2 id="category-title" class="uppercase text-2xl md:text-[40px] shrink-0 text-gray-400 max-w-full leading-none mr-auto md:mr-0"></h2>
+          <h2
+            id="category-title"
+            class="uppercase text-2xl md:text-[40px] shrink-0 text-gray-400 max-w-full leading-none mr-auto md:mr-0"></h2>
           <div class="hidden md:block w-full h-[1px] bg-gray-400 mx-3"></div>
-          <button id="category-btn-left" type="button" class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 disabled:bg-gray-400">
+          <button
+            id="category-btn-left"
+            type="button"
+            class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 disabled:bg-gray-400">
             <i class="icon-chevron-left text-white md:text-xl"></i>
           </button>
-          <button id="category-btn-right" type="button" class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 rotate-180 disabled:bg-gray-400">
+          <button
+            id="category-btn-right"
+            type="button"
+            class="bg-primary h-7 md:h-10 w-7 md:w-10 rounded-full shrink-0 rotate-180 disabled:bg-gray-400">
             <i class="icon-chevron-left text-white md:text-xl"></i>
           </button>
         </div>
-        <ul id="product-list" class="*:py-6 md:*:py-12 *:border-b *:border-gray-400"></ul>
+        <ul
+          id="product-list"
+          class="*:py-6 md:*:py-12 *:border-b *:border-gray-400"></ul>
         <div id="loader"></div>
       </div>
     </section>
@@ -68,11 +88,19 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <script src="../js/template-001/index.js" type="module"></script>
-    <script src="../js/template-001/function/categoryBtn.js" type="module"></script>
-    <script type="module" src="../js/template-001/function/createHeader.js"></script>
-    <script type="module" src="../js/template-001/function/createLoader.js"></script>
-    <script type="module" src="../js/template-001/function/createBackTop.js"></script>
-    <script type="module" src="../js/createImagePreload.js"></script>
+    <script src="../js/template-001/index.js" type="module" async></script>
+    <script
+      src="../js/template-001/function/categoryBtn.js"
+      type="module"
+      async></script>
+    <script
+      type="module"
+      src="../js/template-001/function/createHeader.js"></script>
+    <script
+      type="module"
+      src="../js/template-001/function/createLoader.js"></script>
+    <script
+      type="module"
+      src="../js/template-001/function/createBackTop.js"></script>
   </body>
 </html>
