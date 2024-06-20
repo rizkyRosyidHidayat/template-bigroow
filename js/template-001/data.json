@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Seared Scallops with Lemon Risotto and Asparagus",
+		"name": "Seared Scallops",
 		"description": "Plump, diver-caught scallops are pan-seared to a golden brown and served atop a creamy lemon risotto bursting with fresh parmesan cheese. Tender asparagus tips add a delightful pop of green and a touch of earthiness.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 67000,
@@ -27,7 +27,7 @@
 		]
 	},
 	{
-		"name": "Herb-Marinated Flank Steak with Chimichurri Sauce",
+		"name": "Herb-Marinated Flank Steak",
 		"description": "A skirt steak's bolder cousin, flank steak is marinated in a vibrant blend of herbs like rosemary, thyme, and oregano, then grilled to juicy perfection.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 56000,
@@ -52,7 +52,7 @@
 		],
 		"variant": [
 			{
-				"name": "Marinate the flank steak in a Korean-inspired marinade with soy sauce",
+				"name": "Marinate the flank steak",
 				"price": 65000
 			},
 			{
@@ -66,7 +66,7 @@
 		]
 	},
 	{
-		"name": "Thai Green Curry with Vegetables and Tofu",
+		"name": "Thai Green Curry",
 		"description": "This fragrant curry features a symphony of flavors U+002d the sweetness of coconut milk, the earthiness of green chilies, and the warmth of ginger. A medley of colorful vegetables like broccoli, bell peppers, and eggplant simmer in this flavorful broth alongside pan-fried tofu puffs.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 42000,
@@ -97,7 +97,7 @@
 		]
 	},
 	{
-		"name": "Pan-Seared Duck Breast with Cherry Port Wine Sauce",
+		"name": "Pan-Seared Duck Breast",
 		"description": "Duck breast, known for its rich flavor and crispy skin, is pan-seared to achieve the perfect balance of textures. A luxurious cherry port wine sauce, bursting with sweet and tart flavors, complements the duck perfectly.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 72000,
@@ -120,7 +120,7 @@
 		]
 	},
 	{
-		"name": "Seared Ahi Tuna Steaks with Wasabi Mayo and Sesame Seeds",
+		"name": "Seared Ahi Tuna Steaks",
 		"description": "Sushi-grade ahi tuna steaks are quickly seared to maintain their rare, tender center. A dollop of creamy wasabi mayo adds a touch of heat, while a sprinkle of sesame seeds provides a nutty crunch.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 90000,
@@ -143,7 +143,7 @@
 		]
 	},
 	{
-		"name": "Gourmet Grilled Cheese Dippers with Trio of Spreads",
+		"name": "Gourmet Grilled Cheese Dippers",
 		"description": "Elevate your classic grilled cheese with artisan bread varieties like sourdough or multigrain. Layers of melted Gruyere and Havarti cheeses create a rich and creamy filling. Cut the grilled cheese into bite-sized pieces perfect for dipping.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 22000,
@@ -178,7 +178,7 @@
 		]
 	},
 	{
-		"name": "Miniature Phyllo Cups with Savory Fillings",
+		"name": "Miniature Phyllo Cups",
 		"description": "Flaky phyllo dough is transformed into delicate miniature cups, filled with a variety of delectable savory ingredients. Choose from fillings like creamy spinach and ricotta, spicy chorizo and caramelized onions, or a classic Greek combination of crumbled feta cheese and sun-dried tomatoes.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 27000,
@@ -209,7 +209,7 @@
 		]
 	},
 	{
-		"name": "Decadent Charcuterie Board with Artisanal Meats",
+		"name": "Decadent Charcuterie Board",
 		"description": "A charcuterie board is a feast for the eyes and the palate. Arrange a selection of cured meats like prosciutto and salami alongside an assortment of artisan cheeses like brie, gouda, and cheddar",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 18000,
@@ -238,7 +238,7 @@
 		],
 		"variant": [
 			{
-				"name": "swap out the cured meats for marinated artichoke hearts",
+				"name": "swap out the cured meats",
 				"price": 15000
 			},
 			{
@@ -252,7 +252,7 @@
 		]
 	},
 	{
-		"name": "Spiced Shrimp Cocktail with Cocktail Sauce and Avocado Crema",
+		"name": "Spiced Shrimp Cocktail",
 		"description": "Plump, succulent shrimp are poached in a flavorful court bouillon infused with lemon, herbs, and spices. Once chilled, the shrimp are served with a classic cocktail sauce and a refreshing avocado crema for a delightful dip.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 14500,
@@ -283,7 +283,7 @@
 		]
 	},
 	{
-		"name": "Global Skewers with Dipping Sauces",
+		"name": "Global Skewers",
 		"description": "Create a fun and interactive appetizer experience with a selection of global-inspired skewers. Choose from options like chicken satay with peanut sauce, grilled lamb skewers with a yogurt mint marinade, or vegetable skewers with a chimichurri dipping sauce.",
 		"image": "../assets/img/salmon-grill-preview.png",
 		"price": 19500,
