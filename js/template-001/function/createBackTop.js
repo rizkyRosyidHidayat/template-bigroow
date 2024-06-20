@@ -1,8 +1,8 @@
-import createElement from '../../createElement.js';
+import helper from '../../helper.js';
 gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
-const backTopBtn = createElement(
+const backTopBtn = helper.createElement(
   'button',
   'bg-primary h-[40px] md:h-[56px] w-[40px] md:w-[56px] rounded-full fixed right-4 md:right-8 bottom-4 md:bottom-8 appearance-none',
   document.body
@@ -10,7 +10,7 @@ const backTopBtn = createElement(
 backTopBtn.id = 'back-to-top';
 backTopBtn.type = 'button';
 
-createElement('i', 'icon-arrow-left text-white text-xl md:text-2xl', backTopBtn);
+helper.createElement('i', 'icon-arrow-left text-white text-xl md:text-2xl', backTopBtn);
 
 backTopBtn.addEventListener('click', () => gsap.to(window, { scrollTo: 0 }));
 gsap.set(backTopBtn, { y: 200 });

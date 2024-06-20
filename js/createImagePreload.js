@@ -1,4 +1,4 @@
-import createElement from './createElement.js';
+import helper from './helper.js';
 
 function loadImage() {
   let placeholders = document.querySelectorAll('.placeholder');
@@ -28,9 +28,9 @@ function createImgPreload(
   container.dataset.large = img;
   container.dataset.class = classNameImg;
 
-  createElement('div', 'w-full h-full animate-pulse bg-gray-300', container);
+  helper.createElement('div', 'w-full h-full animate-pulse bg-gray-300', container);
 
-  const div = createElement('div', '', container);
+  const div = helper.createElement('div', '', container);
   div.style.paddingBottom = '50%';
 }
 
