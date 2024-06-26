@@ -87,7 +87,10 @@ function generateCategoryList(listData) {
     );
     listItem.addEventListener('click', () => {
       const originalUrl = window.location.href;
-      const newParams = { category: categoryName !== 'all product' ? categoryName : null, search: null };
+      const newParams = {
+        category: categoryName !== 'all product' ? categoryName : null,
+        search: null,
+      };
 
       const updatedUrl = helper.updateUrlParams(originalUrl, newParams);
       window.location.href = updatedUrl;
@@ -105,7 +108,10 @@ function generateCategoryList(listData) {
       const listWidth = listItem.offsetWidth;
       const textWidth = textItem.offsetWidth;
       if (istextRight) gsap.set(textItem, { x: listWidth - textWidth });
-      if (categoryName === category || !category && categoryName === 'all product') {
+      if (
+        categoryName === category ||
+        (!category && categoryName === 'all product')
+      ) {
         gsap.set(textItem, {
           ease: 'power1',
           duration: 0.3,
@@ -113,16 +119,19 @@ function generateCategoryList(listData) {
           onComplete: () => textItem.classList.add('text-primary'),
         });
       } else {
-        const textCentered = gsap.to(textItem, {
+        gsap.to(textItem, {
           ease: 'power1',
           duration: 0.3,
           x: listWidth / 2 - textWidth / 2,
+          scrollTrigger: {
+            trigger: textItem,
+            toggleActions: 'play reverse play reverse',
+            start: 'top center',
+            end: 'bottom center',
+          },
           onComplete: () => textItem.classList.add('text-primary'),
           onReverseComplete: () => textItem.classList.remove('text-primary'),
         });
-        textCentered.paused(true);
-        listItem.addEventListener('mouseenter', () => textCentered.play());
-        listItem.addEventListener('mouseleave', () => textCentered.reverse());
       }
     }, 0);
   });
@@ -148,15 +157,17 @@ generateCategoryList(listDataCategory);
 const productListEl = document.querySelector('#product-list');
 const notfoundBar = document.querySelector('#not-found');
 notfoundBar.classList.add('hidden');
-if (state.dataProduct.length) createProductList(
-  state.dataProduct.slice(state.startData, state.endData),
-  productListEl
-); else notfoundBar.classList.remove('hidden')
+if (state.dataProduct.length)
+  createProductList(
+    state.dataProduct.slice(state.startData, state.endData),
+    productListEl
+  );
+else notfoundBar.classList.remove('hidden');
 
 const searchNav = document.querySelector('#search-nav');
 searchNav.addEventListener('click', () => {
-  gsap.to(window, { scrollTo: searchBar.offsetTop - 48 })
-})
+  gsap.to(window, { scrollTo: searchBar.offsetTop - 48 });
+});
 
 const loader = document.querySelector('#loader');
 
@@ -184,7 +195,7 @@ const observer = new IntersectionObserver(
   {
     root: null,
     threshold: 1.0,
-    rootMargin: '100px 0px 100px 0px',
+    rootMargin: '200px 0px 200px 0px',
   }
 );
 
