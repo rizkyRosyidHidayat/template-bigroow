@@ -21,13 +21,16 @@ closeBtn.addEventListener('click', () => {
 
 const detailPage = document.querySelector('#detail-page');
 const mainPage = document.querySelector('#main-page');
+const footer = document.querySelector('footer');
 
 if (!name) {
   mainPage.classList.remove('hidden');
   detailPage.classList.add('hidden');
+  footer.classList.add('mb-[100px]');
 } else {
   mainPage.classList.add('hidden');
   detailPage.classList.remove('hidden');
+  footer.classList.remove('mb-[100px]');
 }
 
 if (name) {
