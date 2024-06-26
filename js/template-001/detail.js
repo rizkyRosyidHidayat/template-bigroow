@@ -6,7 +6,6 @@ const name = params.get('name');
 const category = params.get('category');
 const search = params.get('search');
 
-const modalScreen = document.querySelector('#modal-screen');
 const closeBtn = document.querySelector('#close-btn');
 closeBtn.addEventListener('click', () => {
   const originalUrl = window.location.href;
@@ -20,6 +19,17 @@ closeBtn.addEventListener('click', () => {
   window.location.href = updatedUrl;
 });
 
+const detailPage = document.querySelector('#detail-page');
+const mainPage = document.querySelector('#main-page');
+
+if (!name) {
+  mainPage.classList.remove('hidden');
+  detailPage.classList.add('hidden');
+} else {
+  mainPage.classList.add('hidden');
+  detailPage.classList.remove('hidden');
+}
+
 if (name) {
   const state = {
     price: 0,
@@ -27,13 +37,11 @@ if (name) {
     dataProduct: [],
   };
 
-  state.dataProduct = await helper.getDataProduct()
+  state.dataProduct = await helper.getDataProduct();
 
   const detail = state.dataProduct.find((product) => product.name === name);
 
   if (detail) {
-    modalScreen.classList.remove('hidden');
-
     state.price = detail.price;
 
     const getTotalExtra = () =>
