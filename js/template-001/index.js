@@ -53,7 +53,7 @@ searchBar.addEventListener('input', (el) => {
 
 searchBtn.addEventListener('click', (el) => {
   const originalUrl = window.location.href;
-  const newParams = { category, search: state.searchValue };
+  const newParams = { category, search: state.searchValue || null };
 
   const updatedUrl = helper.updateUrlParams(originalUrl, newParams);
   window.location.href = updatedUrl;
@@ -131,7 +131,7 @@ function generateCategoryList(listData) {
   categoriesEl.replaceChildren(listContainer);
 
   setTimeout(() => {
-    if (category) {
+    if (category || search) {
       gsap.to(window, {
         scrollTo: categoriesEl.offsetTop,
       });
@@ -146,10 +146,12 @@ const listDataCategory = [
 generateCategoryList(listDataCategory);
 
 const productListEl = document.querySelector('#product-list');
-createProductList(
+const notfoundBar = document.querySelector('#not-found');
+notfoundBar.classList.add('hidden');
+if (state.dataProduct.length) createProductList(
   state.dataProduct.slice(state.startData, state.endData),
   productListEl
-);
+); else notfoundBar.classList.remove('hidden')
 
 const searchNav = document.querySelector('#search-nav');
 searchNav.addEventListener('click', () => {
