@@ -16,9 +16,9 @@ const state = {
   searchValue: '',
   selectedCategory: 'all product',
 };
-
-state.dataProduct = await helper.getDataProduct();
-state.copywriting = await helper.getDataCopywriting();
+const baseUrl = 'https://rizkyrosyidhidayat.github.io/template-bigroow/js/template-001';
+state.copywriting = await helper.getData(baseUrl + '/copywriting.json');
+state.dataProduct = await helper.getData(baseUrl + '/data.json');
 
 function handleSearchCategory(data) {
   return data.filter(
@@ -145,7 +145,7 @@ function generateCategoryList(listData) {
     }
   }, 0);
 }
-const dataProductCategory = await helper.getDataProduct();
+const dataProductCategory = await helper.getData(baseUrl + '/data.json');
 const listDataCategory = [
   'all product',
   ...new Set(dataProductCategory.map((product) => product.category)),

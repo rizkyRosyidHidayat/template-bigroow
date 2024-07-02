@@ -39,8 +39,8 @@ if (name) {
     selectedExtra: [],
     dataProduct: [],
   };
-
-  state.dataProduct = await helper.getDataProduct();
+  const baseUrl = 'https://rizkyrosyidhidayat.github.io/template-bigroow/js/template-001';
+  state.dataProduct = await helper.getData(baseUrl + '/data.json');
 
   const detail = state.dataProduct.find((product) => product.name === name);
 

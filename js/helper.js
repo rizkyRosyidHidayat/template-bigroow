@@ -10,14 +10,8 @@ function updateUrlParams(url, params) {
   return urlObject.href;
 }
 
-const baseUrl =
-  'https://rizkyrosyidhidayat.github.io/template-bigroow/js/template-001';
-const getDataProduct = async () =>
-  await fetch(baseUrl + '/data.json')
-    .then((response) => response.json())
-    .then((json) => json);
-const getDataCopywriting = async () =>
-  await fetch(baseUrl + '/copywriting.json')
+const getData = async (baseUrl) =>
+  await fetch(baseUrl)
     .then((response) => response.json())
     .then((json) => json);
 
@@ -38,9 +32,8 @@ function createElement(el, className, parent, isReplace) {
 
 const helper = {
   updateUrlParams,
-  getDataCopywriting,
-  getDataProduct,
+  getData,
   setTextContent,
-  createElement
+  createElement,
 };
 export default helper;
