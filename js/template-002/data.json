@@ -1,0 +1,320 @@
+[
+	{
+		"name": "Seared Scallops",
+		"description": "Plump, diver-caught scallops are pan-seared to a golden brown and served atop a creamy lemon risotto bursting with fresh parmesan cheese. Tender asparagus tips add a delightful pop of green and a touch of earthiness.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 67000,
+		"category": "main course",
+		"extra": [
+			{
+				"name": "decadent touch",
+				"price": 12000
+			},
+			{
+				"name": "dollop of lobster bisque",
+				"price": 25000
+			}
+		],
+		"variant": [
+			{
+				"name": "Substitute shrimp",
+				"price": 65000
+			},
+			{
+				"name": "sea bass for the scallops",
+				"price": 69000
+			}
+		]
+	},
+	{
+		"name": "Herb-Marinated Flank Steak",
+		"description": "A skirt steak's bolder cousin, flank steak is marinated in a vibrant blend of herbs like rosemary, thyme, and oregano, then grilled to juicy perfection.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 56000,
+		"category": "main course",
+		"extra": [
+			{
+				"name": "side of chimichurri sauce",
+				"price": 12000
+			},
+			{
+				"name": "chunky condiment made with parsley",
+				"price": 25000
+			},
+			{
+				"name": "garlic",
+				"price": 5000
+			},
+			{
+				"name": "red wine vinegar",
+				"price": 35000
+			}
+		],
+		"variant": [
+			{
+				"name": "Marinate the flank steak",
+				"price": 65000
+			},
+			{
+				"name": "ginger",
+				"price": 61000
+			},
+			{
+				"name": "sesame oil for a different flavor profile",
+				"price": 60000
+			}
+		]
+	},
+	{
+		"name": "Thai Green Curry",
+		"description": "This fragrant curry features a symphony of flavors U+002d the sweetness of coconut milk, the earthiness of green chilies, and the warmth of ginger. A medley of colorful vegetables like broccoli, bell peppers, and eggplant simmer in this flavorful broth alongside pan-fried tofu puffs.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 42000,
+		"category": "main course",
+		"extra": [
+			{
+				"name": "richer curry",
+				"price": 10000
+			},
+			{
+				"name": "dollop of peanut butter",
+				"price": 15000
+			},
+			{
+				"name": "drizzle of coconut cream",
+				"price": 13000
+			}
+		],
+		"variant": [
+			{
+				"name": "Substitute chicken",
+				"price": 45000
+			},
+			{
+				"name": "shrimp for the tofu",
+				"price": 49000
+			}
+		]
+	},
+	{
+		"name": "Pan-Seared Duck Breast",
+		"description": "Duck breast, known for its rich flavor and crispy skin, is pan-seared to achieve the perfect balance of textures. A luxurious cherry port wine sauce, bursting with sweet and tart flavors, complements the duck perfectly.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 72000,
+		"category": "main course",
+		"extra": [
+			{
+				"name": "roasted Brussels sprouts",
+				"price": 17000
+			},
+			{
+				"name": "sauteed baby spinach",
+				"price": 11000
+			}
+		],
+		"variant": [
+			{
+				"name": "grill the duck breast instead of pan-searing",
+				"price": 70000
+			}
+		]
+	},
+	{
+		"name": "Seared Ahi Tuna Steaks",
+		"description": "Sushi-grade ahi tuna steaks are quickly seared to maintain their rare, tender center. A dollop of creamy wasabi mayo adds a touch of heat, while a sprinkle of sesame seeds provides a nutty crunch.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 90000,
+		"category": "main course",
+		"extra": [
+			{
+				"name": "fluffy sushi rice",
+				"price": 27000
+			},
+			{
+				"name": "bed of mixed greens",
+				"price": 21000
+			}
+		],
+		"variant": [
+			{
+				"name": "Marinate the tuna in a teriyaki sauce",
+				"price": 98000
+			}
+		]
+	},
+	{
+		"name": "Gourmet Grilled Cheese Dippers",
+		"description": "Elevate your classic grilled cheese with artisan bread varieties like sourdough or multigrain. Layers of melted Gruyere and Havarti cheeses create a rich and creamy filling. Cut the grilled cheese into bite-sized pieces perfect for dipping.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 22000,
+		"category": "appetizer",
+		"extra": [
+			{
+				"name": "Offer a trio of dipping sauces",
+				"price": 7000
+			},
+			{
+				"name": "tangy tomato jam",
+				"price": 2000
+			},
+			{
+				"name": "creamy roasted garlic aioli",
+				"price": 1000
+			},
+			{
+				"name": "sweet fig spread",
+				"price": 1300
+			}
+		],
+		"variant": [
+			{
+				"name": "vegetarian option",
+				"price": 25000
+			},
+			{
+				"name": "roasted red peppers for the cheese",
+				"price": 25000
+			}
+		]
+	},
+	{
+		"name": "Miniature Phyllo Cups",
+		"description": "Flaky phyllo dough is transformed into delicate miniature cups, filled with a variety of delectable savory ingredients. Choose from fillings like creamy spinach and ricotta, spicy chorizo and caramelized onions, or a classic Greek combination of crumbled feta cheese and sun-dried tomatoes.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 27000,
+		"category": "appetizer",
+		"extra": [
+			{
+				"name": "Drizzle the phyllo cups",
+				"price": 5600
+			},
+			{
+				"name": "sprinkle of crumbled blue cheese ",
+				"price": 3000
+			}
+		],
+		"variant": [
+			{
+				"name": "mixture of ricotta cheese",
+				"price": 25000
+			},
+			{
+				"name": "honey",
+				"price": 29000
+			},
+			{
+				"name": "chopped nuts",
+				"price": 23000
+			}
+		]
+	},
+	{
+		"name": "Decadent Charcuterie Board",
+		"description": "A charcuterie board is a feast for the eyes and the palate. Arrange a selection of cured meats like prosciutto and salami alongside an assortment of artisan cheeses like brie, gouda, and cheddar",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 18000,
+		"category": "appetizer",
+		"extra": [
+			{
+				"name": "Include a variety of accompaniments",
+				"price": 6500
+			},
+			{
+				"name": "marinated olives",
+				"price": 2700
+			},
+			{
+				"name": "fresh grapes",
+				"price": 1900
+			},
+			{
+				"name": "sliced baguette",
+				"price": 2300
+			},
+			{
+				"name": "crackers",
+				"price": 1100
+			}
+		],
+		"variant": [
+			{
+				"name": "swap out the cured meats",
+				"price": 15000
+			},
+			{
+				"name": "roasted vegetables",
+				"price": 19000
+			},
+			{
+				"name": "hummus",
+				"price": 13000
+			}
+		]
+	},
+	{
+		"name": "Spiced Shrimp Cocktail",
+		"description": "Plump, succulent shrimp are poached in a flavorful court bouillon infused with lemon, herbs, and spices. Once chilled, the shrimp are served with a classic cocktail sauce and a refreshing avocado crema for a delightful dip.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 14500,
+		"category": "appetizer",
+		"extra": [
+			{
+				"name": "sprinkle of paprika",
+				"price": 1400
+			},
+			{
+				"name": "lemon wedges",
+				"price": 1700
+			},
+			{
+				"name": "fresh dill",
+				"price": 1250
+			}
+		],
+		"variant": [
+			{
+				"name": "poached scallops",
+				"price": 15000
+			},
+			{
+				"name": "chilled lobster meat",
+				"price": 16800
+			}
+		]
+	},
+	{
+		"name": "Global Skewers",
+		"description": "Create a fun and interactive appetizer experience with a selection of global-inspired skewers. Choose from options like chicken satay with peanut sauce, grilled lamb skewers with a yogurt mint marinade, or vegetable skewers with a chimichurri dipping sauce.",
+		"image": "../assets/img/salmon-grill-preview.png",
+		"price": 19500,
+		"category": "appetizer",
+		"extra": [
+			{
+				"name": "cherry tomatoes",
+				"price": 2700
+			},
+			{
+				"name": "bell peppers",
+				"price": 1990
+			},
+			{
+				"name": "red onions",
+				"price": 1850
+			}
+		],
+		"variant": [
+			{
+				"name": "create veggie-only skewers with marinated tofu",
+				"price": 23000
+			},
+			{
+				"name": "portobello mushrooms",
+				"price": 17500
+			},
+			{
+				"name": "zucchini",
+				"price": 17500
+			}
+		]
+	}
+]

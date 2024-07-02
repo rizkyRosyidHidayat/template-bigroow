@@ -1,0 +1,10 @@
+{
+	"title": "Find Your Favorite Food Find Your Happy",
+	"heroBannerSmall": "../assets/img/cofee-shop.jpg",
+	"heroBanner": "../assets/img/cofee-machine.jpg",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat tempor vulputate. Ut dictum a sapien in blandit. Aenean varius diam sed tortor ullamcorper maximus.",
+	"cardInfo": {
+		"title": "very easy to search",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat tempor vulputate. Ut dictum a sapien in blandit. Aenean varius diam sed tortor ullamcorper maximus."
+	}
+}
