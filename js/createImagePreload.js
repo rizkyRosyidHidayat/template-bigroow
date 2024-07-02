@@ -9,7 +9,8 @@ function loadImage() {
   function loadImage(placeholder) {
     let imgLarge = new Image();
     imgLarge.src = placeholder.dataset.large;
-    imgLarge.className = placeholder.dataset.class;
+    if (placeholder.dataset.class)
+      imgLarge.className = placeholder.dataset.class;
     imgLarge.onload = function () {
       imgLarge.classList.add('loaded');
       imgLarge.classList.add('object-cover');
@@ -19,12 +20,7 @@ function loadImage() {
   }
 }
 
-function createImgPreload(
-  id,
-  classNameContainer,
-  img,
-  classNameImg,
-) {
+function createImgPreload(id, classNameContainer, img, classNameImg) {
   const container = document.querySelector('#' + id);
   container.className = `placeholder ${classNameContainer}`;
   container.dataset.large = img;
