@@ -57,13 +57,11 @@ if (name) {
     image.createImgPreload(
       'image-detail-mobile',
       'block md:hidden w-full h-[273px] mt-5',
-      'object-center object-cover',
       detail.image
     );
     image.createImgPreload(
       'image-detail',
       'hidden md:block w-1/2 h-[425px]',
-      'object-center object-cover',
       detail.image
     );
 

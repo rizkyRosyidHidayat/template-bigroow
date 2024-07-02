@@ -12,6 +12,8 @@ function loadImage() {
     imgLarge.className = placeholder.dataset.class;
     imgLarge.onload = function () {
       imgLarge.classList.add('loaded');
+      imgLarge.classList.add('object-cover');
+      imgLarge.classList.add('object-center');
     };
     placeholder.appendChild(imgLarge);
   }
@@ -20,15 +22,15 @@ function loadImage() {
 function createImgPreload(
   id,
   classNameContainer,
+  img,
   classNameImg,
-  img
 ) {
   const container = document.querySelector('#' + id);
   container.className = `placeholder ${classNameContainer}`;
   container.dataset.large = img;
-  container.dataset.class = classNameImg;
+  if (!!classNameImg) container.dataset.class = classNameImg;
 
-  helper.createElement('div', 'w-full h-full animate-pulse bg-gray-300', container);
+  helper.createElement('div', 'w-full h-full animate-pulse', container);
 
   const div = helper.createElement('div', '', container);
   div.style.paddingBottom = '50%';

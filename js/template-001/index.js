@@ -63,14 +63,12 @@ helper.setTextContent('title', state.copywriting.title);
 helper.setTextContent('description', state.copywriting.description);
 image.createImgPreload(
   'hero-banner-mobile',
-  'block md:hidden',
-  'w-full h-[273px] object-center object-cover mb-4',
-  state.copywriting.heroBanner
+  'block md:hidden w-full h-[273px] mb-4',
+  state.copywriting.heroBanner,
 );
 image.createImgPreload(
   'hero-banner-desktop',
-  'h-[425px]',
-  'object-center object-cover w-full',
+  'h-[425px] w-full',
   state.copywriting.heroBanner
 );
 helper.setTextContent('category-text', state.copywriting.categoryText);
